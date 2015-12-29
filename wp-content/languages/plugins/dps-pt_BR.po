@@ -1,0 +1,418 @@
+# Translation of Dokan Subscription in Portuguese (Brazil)
+# This file is distributed under the same license as the Dokan Subscription package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-11-21 23:48-0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"Project-Id-Version: Dokan Subscription\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+
+#: includes/admin/admin.php:481
+msgid "Currently Activated Pack"
+msgstr "Plano Atual"
+
+#: includes/admin/admin.php:485
+msgid "Start Date :"
+msgstr "Início"
+
+#: includes/admin/admin.php:489
+msgid "End Date :"
+msgstr "Expira em:"
+
+#: includes/admin/admin.php:496
+msgid "<i>This user already has recurring pack assigned. Are you sure to assign a new normal pack to the user? If you do so, the existing recurring plan will be replaced with the new one<i>"
+msgstr ""
+
+#: includes/admin/admin.php:501
+msgid "Assign Subscription Pack"
+msgstr "Escolha seu plano:"
+
+#: includes/admin/admin.php:504
+msgid "-- Select a pack --"
+msgstr "Selecione um plano"
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:305
+msgid "IPN subscription sign up completed."
+msgstr "Assinatura IPN do plano completa."
+
+#: includes/classes/class-registration-sub.php:54
+msgid "Choose Subscription Pack"
+msgstr "Escolha seu plan0."
+
+#: includes/classes/class-registration-sub.php:81
+msgid "Price :"
+msgstr "Preço:"
+
+msgid "https://wedevs.com/products/plugins/dokan/"
+msgstr "http://consultorasdobrasil.com"
+
+msgid "Product subscription pack add-on for Dokan sellers"
+msgstr ""
+
+msgid "https://wedevs.com/"
+msgstr "http://consultorasdobrasil.com"
+
+#: dokan-product-subscription.php:370
+msgid "Sorry your subscription exceeds your package limits please update your package subscription"
+msgstr "Opa! Você chegou ao limite. Por favor atualiza seu plano para continuar."
+
+#: dokan-product-subscription.php:471
+msgid "Please cancel your running package to switch another subscription"
+msgstr "Antes de trocar de plano você precisa cancelar o plano atual."
+
+#: includes/admin/admin.php:259
+msgid "Enable Subscription in registration form"
+msgstr ""
+
+#: includes/admin/admin.php:260
+msgid "Enable Subscription pack in registration form for new seller"
+msgstr ""
+
+#: dokan-product-subscription.php:158 dokan-product-subscription.php:163
+#: includes/admin/admin.php:213
+msgid "Product Subscription"
+msgstr "Product Subscription"
+
+#: dokan-product-subscription.php:261
+msgid "Sorry! You can not add any product. Please <a href=\"%s\">update your package</a>."
+msgstr "Desculpe. Você não pode mais adicionar produtos. Por favor, <a href=\"%s\">atualize seu plano</a>."
+
+#: dokan-product-subscription.php:264
+msgid "You can add %d more product(s)."
+msgstr "Você ainda pode adicionar mais %d produto(s)."
+
+#: dokan-product-subscription.php:338 dokan-product-subscription.php:345
+#: includes/admin/admin.php:252 includes/admin/admin.php:349
+msgid "Subscription"
+msgstr "Planos"
+
+#: dokan-product-subscription.php:405
+msgid "days"
+msgstr "dias"
+
+#: dokan-product-subscription.php:408
+msgid "week"
+msgstr "semana"
+
+#: dokan-product-subscription.php:411
+msgid "mo"
+msgstr "mês"
+
+#: dokan-product-subscription.php:414
+msgid "yr"
+msgstr "ano"
+
+#: dokan-product-subscription.php:453
+msgid "Your are using <span>%s</span> package."
+msgstr "Seu plano atual é o: <span>%s</span>."
+
+#: dokan-product-subscription.php:456
+msgid "You can add <span>%s</span> product(s) for <span>%s</span> days."
+msgstr "Você ainda pode adicionar <span>%s</span> produtos(s) no período restante de <span>%s</span> dias."
+
+#: dokan-product-subscription.php:459
+msgid "Your package will expire on <span>%s</span>"
+msgstr "Sua assinatura irá acabar em <span>%s</span>"
+
+#: dokan-product-subscription.php:464
+msgid "To cancel your subscription click here &rarr;"
+msgstr "Para cancelar seu plano clique aqui &rarr;"
+
+#: dokan-product-subscription.php:467 includes/admin/admin.php:424
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: dokan-product-subscription.php:481
+msgid "Your subscription has been cancelled!"
+msgstr "Sua inscrição foi cancelada!"
+
+#: dokan-product-subscription.php:504
+#: includes/classes/class-registration-sub.php:83
+msgid "Free"
+msgstr "Grátis"
+
+#: dokan-product-subscription.php:528
+#: includes/classes/class-registration-sub.php:109
+msgid "In every %d %s(s)"
+msgstr "Em toda %d %s(s)"
+
+#: dokan-product-subscription.php:536
+msgid "Your Pack"
+msgstr "Seu Plano"
+
+#: dokan-product-subscription.php:540
+msgid "Renew"
+msgstr "Renovar"
+
+#: dokan-product-subscription.php:545
+msgid "You Alredy taken"
+msgstr "Você já possui esse plano."
+
+#: dokan-product-subscription.php:549
+msgid "Buy Now"
+msgstr "Comprar Agora"
+
+#: dokan-product-subscription.php:558
+msgid "No subscription pack has been found!"
+msgstr "Nenhum Plano de assinatura encontrado"
+
+#: dokan-product-subscription.php:741
+msgid "A subscription has been removed from your cart. Due to payment gateway restrictions, products and subscriptions can not be purchased at the same time."
+msgstr "Um Plano de Assinatura foi removido do carrinho. Infelizmente, planos de assinaturas e produtos não podem ser comprados de uma vez só. "
+
+#: dokan-product-subscription.php:1003
+msgid "Nonce failure"
+msgstr ""
+
+#: includes/admin/admin.php:37
+msgid "Successfully Cancelled Subscription"
+msgstr ""
+
+#: includes/admin/admin.php:39
+msgid "Sorry Something wrong please try again"
+msgstr "Que pena, Algum erro ocorreu. Por favor, tente de novo. "
+
+msgid "Dokan Subscription"
+msgstr ""
+
+#: includes/admin/admin.php:78
+msgid "Number of Products"
+msgstr "Número de Produtos"
+
+#: includes/admin/admin.php:80
+msgid "Enter the no of product you want to give this package."
+msgstr ""
+
+#: includes/admin/admin.php:92
+msgid "Pack Validity"
+msgstr "Validade:"
+
+#: includes/admin/admin.php:94
+msgid "Enter no of validity days you want to give this pack "
+msgstr ""
+
+#: includes/admin/admin.php:106
+msgid "Recurring Payment"
+msgstr ""
+
+#: includes/admin/admin.php:107
+msgid "Please check this if you want to enable recurring payment system"
+msgstr ""
+
+#: includes/admin/admin.php:122
+msgid "Billing cycle"
+msgstr ""
+
+#: includes/admin/admin.php:143
+msgid "Billing cycle stop"
+msgstr ""
+
+#: includes/admin/admin.php:227
+msgid "- select -"
+msgstr ""
+
+#: includes/admin/admin.php:267
+msgid "Enable Product Subscription"
+msgstr ""
+
+#: includes/admin/admin.php:268
+msgid "Enable product subscription for seller"
+msgstr ""
+
+#: includes/admin/admin.php:273
+msgid "Enable Email Notification"
+msgstr ""
+
+#: includes/admin/admin.php:274
+msgid "Enable notification by email for seller during end of the package expiration"
+msgstr ""
+
+#: includes/admin/admin.php:279
+msgid "No. of Days"
+msgstr ""
+
+#: includes/admin/admin.php:280
+msgid "How many days befor email will be send to seller"
+msgstr ""
+
+#: includes/admin/admin.php:286
+msgid "Product Status"
+msgstr ""
+
+#: includes/admin/admin.php:287
+msgid "Product status when seller pack validity will be ended"
+msgstr ""
+
+#: includes/admin/admin.php:291
+msgid "Published"
+msgstr ""
+
+#: includes/admin/admin.php:292
+msgid "Pending Review"
+msgstr ""
+
+#: includes/admin/admin.php:293
+msgid "Draft"
+msgstr ""
+
+#: includes/admin/admin.php:298
+msgid "Email Subject"
+msgstr ""
+
+#: includes/admin/admin.php:299
+msgid "Enter Subject text for email notification"
+msgstr ""
+
+#: includes/admin/admin.php:304
+msgid "Email body"
+msgstr ""
+
+#: includes/admin/admin.php:305
+msgid "Enter body text for email nitification"
+msgstr ""
+
+#: includes/admin/admin.php:360
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: includes/admin/admin.php:365
+msgid "Subscription User List"
+msgstr ""
+
+#: includes/admin/admin.php:376 includes/admin/admin.php:386
+msgid "Username"
+msgstr ""
+
+#: includes/admin/admin.php:377 includes/admin/admin.php:387
+msgid "Subscription Pack"
+msgstr ""
+
+#: includes/admin/admin.php:378 includes/admin/admin.php:388
+msgid "Start date"
+msgstr ""
+
+#: includes/admin/admin.php:379 includes/admin/admin.php:389
+msgid "End date"
+msgstr ""
+
+#: includes/admin/admin.php:380 includes/admin/admin.php:390
+msgid "Status"
+msgstr ""
+
+#: includes/admin/admin.php:381 includes/admin/admin.php:391
+msgid "Action"
+msgstr ""
+
+#: includes/admin/admin.php:420
+msgid "Active"
+msgstr ""
+
+#: includes/admin/admin.php:420
+msgid "Cancelled"
+msgstr ""
+
+#: includes/admin/admin.php:434
+msgid "No users with subscription found!"
+msgstr ""
+
+#: includes/classes/class-dps-manager.php:104
+msgid "day(s)"
+msgid_plural "%s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/classes/class-dps-manager.php:105
+msgid "week(s)"
+msgid_plural "%s weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/classes/class-dps-manager.php:106
+msgid "month(s)"
+msgid_plural "%s months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/classes/class-dps-manager.php:107
+msgid "year(s)"
+msgid_plural "%s years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/classes/class-dps-manager.php:128
+msgid "Never"
+msgstr ""
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:104
+msgid "It is <strong>strongly recommended you do not change this email address</strong> if you have active subscriptions with PayPal. Doing so can break existing subscriptions."
+msgstr ""
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:108
+msgid "API Credentials"
+msgstr ""
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:110
+msgid "Enter your PayPal API credentials to unlock subscription suspension and cancellation features. %sLearn More &raquo;%s"
+msgstr ""
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:113
+msgid "API Username"
+msgstr ""
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:119
+msgid "API Password"
+msgstr ""
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:125
+msgid "API Signature"
+msgstr ""
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:335
+msgid "IPN subscription payment completed. txn_id#%s"
+msgstr ""
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:340
+msgid "IPN subscription payment failed."
+msgstr ""
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:357
+msgid "IPN subscription cancelled for order."
+msgstr ""
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:375
+msgid "IPN subscription end-of-term for order."
+msgstr ""
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:388
+msgid "IPN subscription payment failure."
+msgstr ""
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:415
+msgid "Subscription cancelled with PayPal"
+msgstr "Plano cancelado com PayPal"
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:429
+msgid "cancelled"
+msgstr "cancelado"
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:432
+msgid "suspended"
+msgstr "suspenso"
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:435
+msgid "reactivated"
+msgstr "reativado"
+
+#: includes/classes/class-dps-paypal-standard-subscriptions.php:460
+msgid "Subscription %s at %s"
+msgstr "Plano %s em %s"
+
+msgid "weDevs"
+msgstr "Consultoras do Brasil"

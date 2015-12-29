@@ -1,0 +1,39 @@
+ul.dokan-list-inline {
+    background-color: #fff;
+    border-width: 0 1px 1px 1px;
+    border-color: #ededed #ededed #ededed #ededed;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+}
+ul.dokan-list-inline  li {
+display: inline-block;
+border-right: 1px solid #ededed;
+}
+ul.dokan-list-inline li a {
+text-decoration: none;
+color: #666;
+padding: 10px 15px;
+display: inline-block;
+}
+ul.dokan-list-inline li a:hover {
+  background: #eee;
+}
+
+#pageProdutos #secondary {
+    width: 22%;
+    float: left;
+}
+.woocommerce div.product {
+    width: 74%;
+    float: right;
+}
+.woocommerce .woocommerce-message, .woocommerce-page .woocommerce-message, .woocommerce .woocommerce-error, .woocommerce-page .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce-page .woocommerce-info {
+    height: 48px;
+    top: -55px;
+}
+.woocommerce div.product .woocommerce-tabs .panel {
+    margin: -22px 0 0em;
+    padding: 20px;
+}

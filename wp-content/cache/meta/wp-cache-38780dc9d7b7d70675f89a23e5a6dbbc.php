@@ -1,0 +1,1 @@
+<?php die(); ?>{"dynamic":true,"uri":"consultorasdobrasil.com\/consultoras\/?selectThis=&selectThis=","blog_id":1,"post":14413,"key":"consultorasdobrasil.com80\/consultoras\/?selectThis=&selectThis=gzip","headers":{"Content-Type":"Content-Type: text\/html; charset=UTF-8","Last-Modified":"Last-Modified: Tue, 29 Dec 2015 13:36:32 GMT"}}
