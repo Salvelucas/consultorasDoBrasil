@@ -31,6 +31,8 @@
     $enable_tnc     = isset( $profile_info['enable_tnc'] ) ? $profile_info['enable_tnc'] : '';
     $store_tnc      = isset( $profile_info['store_tnc'] ) ? $profile_info['store_tnc'] : '' ;
 
+
+
     if ( is_wp_error( $validate ) ) {
         $storename    = $_POST['dokan_store_name'];
         $map_location = $_POST['location'];
@@ -44,7 +46,24 @@
         $address_state   = $_POST['dokan_address']['state'];
     }
 
+    $marca = isset( $profile_info['brands'] ) ? $profile_info['brands'] : '';
+    $str = implode(",",$marca);
+
 ?>
+<script type="text/javascript">
+  var str = '<?php echo $str; ?>';
+  $(document).ready(function() {
+    var temp = new Array();
+    temp = str.split(",");
+    for (i=0; i!=temp.length;i++) {
+        var checkbox = $("input[type='checkbox'][value='"+temp[i]+"']");
+        checkbox.attr("checked","checked");
+    }
+  });
+</script>
+
+
+
 <?php do_action( 'dokan_settings_before_form', $current_user, $profile_info ); ?>
 
     <form method="post" id="store-form"  action="" class="dokan-form-horizontal">
@@ -172,7 +191,7 @@
             <div class="dokan-form-group" id="dokan_tnc_text">
                 <label class="dokan-w3 dokan-control-label" for="dokan_store_tnc"><?php _e( 'TOC Details', 'dokan' ); ?></label>
                 <div class="dokan-w8 dokan-text-left">
-                    <?php                    
+                    <?php
                         $settings = array(
                             'editor_height' => 200,
                             'media_buttons' => false,
@@ -281,7 +300,7 @@
 
         $(function() {
             dokan_address_select.init();
-            
+
             $('#setting_phone').keydown(function(e) {
                 // Allow: backspace, delete, tab, escape, enter and .
                 if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 91, 107, 109, 110, 187, 189, 190]) !== -1 ||

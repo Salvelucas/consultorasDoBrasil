@@ -1,13 +1,11 @@
 <?php ob_start() ?>
 
 <?php
-
 function patricks_billing_fields( $fields ) {
 	global $woocommerce;
 	// if the total is more than 0 then we still need the fields
 	if ( 0 != $woocommerce->cart->total ) {
 		return $fields;
-
 	}
 	// return the regular billing fields if we need shipping fields
 	if ( $woocommerce->cart->needs_shipping() ) {
@@ -34,9 +32,7 @@ function patricks_billing_fields( $fields ) {
   unset( $fields['billing_cellphone'] );
   unset( $fields['billing_cpf'] );
 	return $fields;
-
 }
-
 add_filter( 'woocommerce_billing_fields', 'patricks_billing_fields', 20 );
  ?>
 <?php
@@ -46,13 +42,10 @@ add_filter( 'woocommerce_billing_fields', 'patricks_billing_fields', 20 );
  * Unhook sidebar
  */
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
-
 function wc_remove_required_last_name( $fields ) {
 	unset( $fields['account_last_name'] );
-
 	return $fields;
 }
-
 	function vb_pagination( $query=null ) {
 	  global $wp_query;
 	  $query = $query ? $query : $wp_query;
@@ -85,14 +78,12 @@ define( 'THEMEROOT', get_stylesheet_directory_uri() );
 function scripts(){
 wp_enqueue_style( 'dokan-child', THEMEROOT.'/style.css', false, null );
 }
-
 add_action( 'wp_enqueue_scripts', 'scripts', 99);
 ?>
 <?php
 error_reporting(0);
 function consultoras_is_checked($brands,$brandValue)
 {
-
     if(in_array($brandValue,$brands))
     {
         return 'checked="checked"';
@@ -109,18 +100,16 @@ function extra_fields( $current_user, $profile_info ) {
 						$brandArray = consultoras_get_brands();
 						foreach($brandArray as $brandvalue)
 						{?>
-								<input type="checkbox" name="brands[]" value="<?php echo $brandvalue;?>"  class="<?php echo 'id_' . $store_id; ?>" <?php echo consultoras_is_checked($brands,$brandvalue)?>> <?php echo $brandvalue;?>&nbsp;
+								<div class="bandeirasH"><span><input type="checkbox" name="brands[]" value="<?php echo $brandvalue;?>"  class="<?php echo 'id_' . $store_id; ?>" <?php echo consultoras_is_checked($brands,$brandvalue)?>>&nbsp;&nbsp;<?php echo $brandvalue;?></span></div>
 								<?php }?>
 
 				</div>
 		</div>
 <?php
-
  ?>
 <?php
 }
 add_filter( 'dokan_settings_after_banner', 'extra_fields');
-
 /**
  * Save the extra fields.
  *
@@ -129,25 +118,17 @@ add_filter( 'dokan_settings_after_banner', 'extra_fields');
  * @return void
  */
 function save_extra_fields( $store_id ) {
-
     $prev_dokan_settings = get_user_meta( $store_id, 'dokan_profile_settings', true );
     $dokan_settings = array();
-
-
 		        if ( isset( $_POST['brands'] ) ) {
 		            $dokan_settings['brands'] = $_POST['brands'];
 		        }
-
     $dokan_settings = array_merge( $prev_dokan_settings,$dokan_settings );
-
     update_user_meta( $store_id, 'dokan_profile_settings', $dokan_settings );
 }
-
 add_action( 'dokan_store_profile_saved', 'save_extra_fields', 15 );
  ?>
 <?php
-
-
 /**
  * Retorna array de marcas da tabela criada wp_consultoras_brands
  * @return mixed
@@ -162,27 +143,18 @@ function consultoras_get_brands()
     {
         $return[$brand->brand_name] = $brand->brand_name;
     }
-
-
     return $return;
 }
-
-
 /**
  * Exibe o formulário com o slect das marcas, estados e campo livre
  * @return string
  */
-
 function consultoras_get_search_form()
 {
-
     //Load Brands;
     $brands = consultoras_get_brands();
-
     $html = "<form method='get' id='searchform' action='' class='formbusca'>";
     $html .="<div class='formi-groupo'>";
-
-
     $html .="<input type='text' class='campobusca' size='42' value='' name='storename' id='storename' placeholder='Nome da Consultora ou Região' />";
     $html .="<select name='brand' id='brand' class='selecbusca'>";
     $html .="<option value=''>Marcas</option>";
@@ -191,9 +163,7 @@ function consultoras_get_search_form()
         $html .="<option value='".$brand."'>".$brand."</option>";
     }
     $html .="</select>";
-
     $estados = consultoras_get_estados();
-
     /*$html .= '<select name="state" id="state" >';
     $html.= '<option value="Selecione um Estado">Selecione</option>';
     foreach ($estados as $estado)
@@ -201,13 +171,11 @@ function consultoras_get_search_form()
         $html .="<option value='".$estado['sigla']."'>".$estado['nome']."</option>";
     }
     $html.= '</select>';*/
-
     $html .="<input type='submit' id='searchbrand' value='Pesquisar' class='dokan-btn dokan-btn-theme' />";
     $html .="</div>";
     $html .="</form>";
     return $html;
 }
-
 function consultorasEstadoBanco()
 {
     global $wpdb;
@@ -218,23 +186,17 @@ function consultorasEstadoBanco()
     {
         $return[$estados->sigla] = $estados->sigla;
     }
-
-
     return $return;
 }
-
 function consultorasGetEstadoBanco()
 {
-
     //Load Brands;
     global $product;
     $carregar = consultorasEstadoBanco();
     $cate = get_queried_object();
     $cateID = $cate->term_id;
 		$cateName = $cate->name;
-
 	 if($cateID == null){
-
  }else{
 		 $rato = get_category_parents($cateID, TRUE, ' > ');
  }
@@ -249,7 +211,6 @@ function consultorasGetEstadoBanco()
         $html .="<option value='".$brand."'>".$brand."</option>";
     }
     $html .="</select>";
-
     $html .="<span class='input-group-btn'>";
     $html .="  <button type='submit' id='searchsubmit' class='btn btn-primary'>Pesquisar</button>";
     $html .="</span>";
@@ -257,9 +218,7 @@ function consultorasGetEstadoBanco()
     $html .="</form>";
     return $html;
 }
-
 class Foo_Widget extends WP_Widget {
-
 	/**
 	 * Register widget with WordPress.
 	 */
@@ -270,7 +229,6 @@ class Foo_Widget extends WP_Widget {
 			array( 'description' => __( 'Aparece no Single Product', 'text_domain' ), ) // Args
 		);
 	}
-
 	/**
 	/**
 	 * Front-end display of widget.
@@ -280,14 +238,11 @@ class Foo_Widget extends WP_Widget {
 	 * @param array $args     Widget arguments.
 	 * @param array $instance Saved values from database.
 	 */
-
-
 	public function widget( $args, $instance ) {
 		echo $args['before_widget'];
 		if ( ! empty( $instance['title'] ) ) {
 			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ). $args['after_title'];
 		}
-
 if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post();
@@ -296,9 +251,7 @@ if ( have_posts() ) {
 		//
 	} // end while
 } // end if
-
 		global $product;
-
 		$author     = get_user_by( 'id', $product->post->post_author );
 		$store_info = dokan_get_store_info( $author->ID );
 		$banner_id  = isset( $store_info['banner'] ) ? $store_info['banner'] : 0;
@@ -321,7 +274,6 @@ if ( have_posts() ) {
 <span class="dadoconsultora">
 		<?php
 		printf( 'Consultora: <a href="%s">%s</a>', dokan_get_store_url( $author->ID ), $author->display_name );
-
 		if ( !empty( $store_info['address'] ) ) { ?>
 
 				<span><br><b><?php _e( 'Address:', 'dokan' ); ?></b></span>
@@ -344,7 +296,6 @@ if ( have_posts() ) {
 		//) );
 		echo $args['after_widget'];
 	}
-
 	/**
 	 * Prints seller info in product single page
 	 *
@@ -353,16 +304,13 @@ if ( have_posts() ) {
 	 */
 	function dokan_product_seller_tab( $val ) {
 		global $product;
-
 		$author     = get_user_by( 'id', $product->post->post_author );
 		$store_info = dokan_get_store_info( $author->ID );
-
 		dokan_get_template_part('global/product-tab', '', array(
 			'author' => $author,
 			'store_info' => $store_info,
 		) );
 	}
-
 	/**
 	 * Back-end widget form.
 	 *
@@ -379,7 +327,6 @@ if ( have_posts() ) {
 		</p>
 	<?php
 	}
-
 	/**
 	 * Sanitize widget form values as they are saved.
 	 *
@@ -393,10 +340,8 @@ if ( have_posts() ) {
 	public function update( $new_instance, $old_instance ) {
 		$instance = array();
 		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-
 		return $instance;
 	}
-
 } // class Foo_Widget
 ?>
 <?php

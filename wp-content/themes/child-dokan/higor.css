@@ -14,6 +14,11 @@ div#dokan_tnc_text {
 .dokan-w5.dokan-text-left.dokan_tock_check {
     display: none;
 }
+.bandeirasH {
+    float: left;
+    margin-left: 16px;
+    padding: 8px;
+}
 span.details img {
     border-radius: 60px;
     width: 60px!important;
