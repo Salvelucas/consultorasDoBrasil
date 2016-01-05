@@ -1,1 +1,0 @@
-<?php die(); ?>{"dynamic":true,"uri":"consultorasdobrasil.com\/?s=&post_type=product","blog_id":1,"post":0,"key":"consultorasdobrasil.com80\/?s=&post_type=productgzip","headers":{"Content-Type":"Content-Type: text\/html; charset=UTF-8","Last-Modified":"Last-Modified: Tue, 29 Dec 2015 13:55:49 GMT"}}
